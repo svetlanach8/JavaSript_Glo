@@ -56,3 +56,4 @@ showTypeOf(adaptive);
 console.log(screens);
 console.log(getRollbackMessage(fullPrice));
 console.log(servicePercentPrice);
+
