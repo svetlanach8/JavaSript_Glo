@@ -11,9 +11,7 @@ const appData = {
   servicePercentPrice: 0,
   service1: '',
   service2: '',
-  servicePrice: 0,
   screenPriceQuestion: 0,
-  servicePriceQuestion: 0,
   asking: function () {
     appData.title = prompt("Как называется ваш проект", "Калькулятор верстки");
     appData.screens = prompt("Какие типы экранов нужно разработать?", "Простой, Сложный, Интерактивный");
@@ -33,6 +31,7 @@ const appData = {
     let sum = 0;
 
     for (let i = 0; i < 2; i++) {
+      let price = 0;
 
       if (i === 0) {
         appData.service1 = prompt("Какой дополнительный тип услуги нужен?");
@@ -41,11 +40,10 @@ const appData = {
       }
 
       do {
-        appData.servicePriceQuestion = prompt("Сколько это будет стоить?");
-      } while (!appData.isNumber(appData.servicePriceQuestion));
+        price = prompt("Сколько это будет стоить?");
+      } while (!appData.isNumber(price));
 
-      appData.servicePrice = Number(appData.servicePriceQuestion);
-      sum += appData.servicePrice;
+      sum += +price;
     }
     return sum;
   },
