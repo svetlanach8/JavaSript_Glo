@@ -8,12 +8,12 @@ const blockNumber = document.querySelectorAll('.other-items.number');
 const inputRange = document.querySelector('.rollback input[type=range]');
 const rangeValue = document.querySelector('.rollback .range-value');
 const inputTotal = document.getElementsByClassName('total-input');
+const inputTotalOne = inputTotal[0];
+const inputTotalTwo = inputTotal[1];
+const inputTotalThree = inputTotal[2];
+const inputTotalFour = inputTotal[3];
+const inputTotalFive = inputTotal[4];
 let screen = document.querySelectorAll('.screen');
-inputTotal[0];
-inputTotal[1];
-inputTotal[2];
-inputTotal[3];
-inputTotal[4];
 
 const appData = {
   rollback: 10,
